@@ -1,5 +1,6 @@
 import time
 
+import allure
 import pytest
 from src.pages.acs_pages_locators import *
 from src.pages.acs_pages_methods import HeaderPage
@@ -7,6 +8,7 @@ from src.pages.acs_pages_methods import HeaderPage
 
 @pytest.mark.usefixtures("install_driver")
 class TestDraft:
+    # @allure.severity("normal")
     @pytest.mark.devtests
     def test_drweb_icon_is_on_main_page(self):
         """
